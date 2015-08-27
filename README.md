@@ -137,3 +137,5 @@ Additional configuration details for the ReflectSoftware.Insight.Extensions.Http
 [Submit User Feedback](http://reflectsoftware.uservoice.com/forums/158277-reflectinsight-feedback)
 
 [Contact Support](support@reflectsoftware.com)
+
+[ReflectSoftware Website](http://reflectsoftware.com)
