@@ -6,6 +6,8 @@
 [![NuGet Version](http://img.shields.io/nuget/v/reflectsoftware.insight.extensions.httpmodule.svg?style=flat)](http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.HttpModule/)
 [![Stars](https://img.shields.io/github/stars/reflectsoftware/reflectinsight-extensions-HttpModule.svg)](https://github.com/reflectsoftware/reflectinsight-extensions-HttpModule/stargazers)
 
+**Package** - [ReflectSoftware.Insight.Extensions.HttpModule](|http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.HttpModule/) | **Platforms** - .NET 4.5
+
 ## Overview ##
 
 We've added support for the Http Module. This allows you to leverage your current investment in this, but leverage the power and flexibility that comes with the ReflectInsight viewer. You can view your Http messages in real-time, in a rich viewer that allows you to filter out and search for what really matters to you.
