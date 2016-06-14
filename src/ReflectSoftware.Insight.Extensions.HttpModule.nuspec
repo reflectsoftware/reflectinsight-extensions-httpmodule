@@ -20,7 +20,7 @@ You can view your Http messages in realtime, in a rich viewer that allows you to
         <summary>ReflectInsight Http Module logging extention make it easy to integrate ReflectInsight into your existing application logging infrastructure and leverage the power of the ReflectInsight log viewer.</summary>
         <releaseNotes></releaseNotes>
         <copyright>© 2016 ReflectSoftware Inc.</copyright>
-        <tags>lreflectinsight logging log logfiles events exception handling structured tracing trace debug diagnostic web asp.net http httpmodule</tags>
+        <tags>reflectinsight logging log logfiles events exception handling structured tracing trace debug diagnostic web asp.net http httpmodule</tags>
         <dependencies>
             <dependency id="ReflectSoftware.Insight" version="5.6.1.2" />
         </dependencies>
