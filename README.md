@@ -6,7 +6,7 @@
 [![NuGet Version](http://img.shields.io/nuget/v/reflectsoftware.insight.extensions.httpmodule.svg?style=flat)](http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.HttpModule/)
 [![Stars](https://img.shields.io/github/stars/reflectsoftware/reflectinsight-extensions-HttpModule.svg)](https://github.com/reflectsoftware/reflectinsight-extensions-HttpModule/stargazers)
 
-**Package** - [ReflectSoftware.Insight.Extensions.HttpModule](|http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.HttpModule/) | **Platforms** - .NET 4.5
+**Package** - [ReflectSoftware.Insight.Extensions.HttpModule](|http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.HttpModule/) | **Platforms** - .NET 4.5.1 and above
 
 ## Overview ##
 
