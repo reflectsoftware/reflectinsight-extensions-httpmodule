@@ -21,22 +21,23 @@ namespace ReflectSoftware.Insight.Extensions.HttpModule
     {
         private readonly static MethodInfo FSendMethodInfo;
 
-        private ReflectInsight FReflectInsight;
+        private IReflectInsight FReflectInsight;
         private Properties FProperties;
         private MessageType FMessageType;
         private Int32 FLastIndentLevel;
         private Boolean FEnabled;
         private String FUrl;
 
-        //---------------------------------------------------------------------
+        /// <summary>
+        /// Initializes the <see cref="RIHttpModule"/> class.
+        /// </summary>
         static RIHttpModule()
         {
             FSendMethodInfo = typeof(ReflectInsight).GetMethod("_SendCustomData", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.InvokeMethod);
         }
-        
-        //---------------------------------------------------------------------
+
         /// <summary>
-        /// Initializes a new instance of the <see cref="RIHttpModule"/> class.
+        /// Initializes a new instance of the <see cref="RIHttpModule" /> class.
         /// </summary>
         public RIHttpModule()
         {
@@ -44,7 +45,6 @@ namespace ReflectSoftware.Insight.Extensions.HttpModule
             RIEventManager.OnServiceConfigChange += DoOnConfigChange;
         }
 
-        //---------------------------------------------------------------------
         /// <summary>
         /// Disposes of the resources (other than memory) used by the module that implements <see cref="T:System.Web.IHttpModule" />.
         /// </summary>
@@ -62,7 +62,6 @@ namespace ReflectSoftware.Insight.Extensions.HttpModule
             }
         }
 
-        //---------------------------------------------------------------------
         /// <summary>
         /// Does the on config change.
         /// </summary>
@@ -71,7 +70,6 @@ namespace ReflectSoftware.Insight.Extensions.HttpModule
             OnConfigChange();
         }
 
-        //---------------------------------------------------------------------
         /// <summary>
         /// Called when [config change].
         /// </summary>
@@ -105,7 +103,6 @@ namespace ReflectSoftware.Insight.Extensions.HttpModule
             }
         }
 
-        //---------------------------------------------------------------------
         /// <summary>
         /// Initializes a module and prepares it to handle requests.
         /// </summary>
@@ -116,12 +113,11 @@ namespace ReflectSoftware.Insight.Extensions.HttpModule
             context.EndRequest += EndRequest;
         }
 
-        //---------------------------------------------------------------------
         /// <summary>
         /// Begins the request.
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void BeginRequest(object sender, EventArgs e)
         {
             try
@@ -153,12 +149,11 @@ namespace ReflectSoftware.Insight.Extensions.HttpModule
             }
         }
 
-        //---------------------------------------------------------------------
         /// <summary>
         /// Ends the request.
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void EndRequest(object sender, EventArgs e)
         {
             try
@@ -184,7 +179,6 @@ namespace ReflectSoftware.Insight.Extensions.HttpModule
             }
         }
 
-        //--------------------------------------------------------------------- 
         /// <summary>
         /// Sends the specified m type.
         /// </summary>
