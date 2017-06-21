@@ -1,8 +1,12 @@
 ## Change Log ##
 
+#### Version 5.7.1 ####
+ * Updated to ReflectInsight v5.7.1.1
+ * Updated reference to Newtonsoft.Json v10.0.2
+
 #### Version 5.7.0 ####
  * Updated to ReflectInsight v5.7.0.0
- * 
+
 #### Version 5.6.1 ####
  * Updated to ReflectInsight 5.6.1.2
  * Updated to .NET 4.5.1
