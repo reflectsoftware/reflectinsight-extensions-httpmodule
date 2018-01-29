@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectSoftware.Insight.Extensions.HttpModule 4.5", "src\ReflectSoftware.Insight.Extensions.HttpModule 4.5.csproj", "{776BFC11-F411-4BC6-860C-34C6DA485E4D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{5083DB16-D99D-48E4-8B72-90F9AFD54F7C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{5083DB16-D99D-48E4-8B72-90F9AFD54F7C}"
 	ProjectSection(SolutionItems) = preProject
 		Build.ps1 = Build.ps1
 		CHANGES.md = CHANGES.md
@@ -18,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{242848A8-31A
 		src\ReflectSoftware.Insight.Extensions.HttpModule.nuspec = src\ReflectSoftware.Insight.Extensions.HttpModule.nuspec
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{10364546-5733-4371-9EA5-00C54DA026C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{2E22D338-21A2-4D76-B11E-226B6AE082E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectInsight.Extensions.HttpModule.Sample", "Sample\ReflectInsight.Extensions.HttpModule.Sample\ReflectInsight.Extensions.HttpModule.Sample.csproj", "{21ABD917-74AA-4F08-9A5E-80604A341481}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,11 +34,20 @@ Global
 		{776BFC11-F411-4BC6-860C-34C6DA485E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776BFC11-F411-4BC6-860C-34C6DA485E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{776BFC11-F411-4BC6-860C-34C6DA485E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21ABD917-74AA-4F08-9A5E-80604A341481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21ABD917-74AA-4F08-9A5E-80604A341481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21ABD917-74AA-4F08-9A5E-80604A341481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21ABD917-74AA-4F08-9A5E-80604A341481}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{776BFC11-F411-4BC6-860C-34C6DA485E4D} = {10364546-5733-4371-9EA5-00C54DA026C3}
 		{242848A8-31AB-48CC-AC70-98886332541E} = {5083DB16-D99D-48E4-8B72-90F9AFD54F7C}
+		{21ABD917-74AA-4F08-9A5E-80604A341481} = {2E22D338-21A2-4D76-B11E-226B6AE082E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75B109F5-84E4-476E-8C71-92AD18728995}
 	EndGlobalSection
 EndGlobal
