@@ -11,14 +11,11 @@ namespace HttpModule_Sample
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            RILogManager.Default.SendMessage("Hello1");
-            RILogManager.Default.SendMessage("Hello2");
+            RILogManager.Default.SendMessage("Page loading");
 
             using (RILogManager.Default.TraceMethod(MethodBase.GetCurrentMethod(), true))
             {
                 RILogManager.Default.SendInformation("Information1");
-                RILogManager.Default.SendInformation("Information2");
-                RILogManager.Default.SendInformation("Information3");
             }
         }
 
@@ -26,9 +23,7 @@ namespace HttpModule_Sample
         {
             using (RILogManager.Default.TraceMethod(MethodBase.GetCurrentMethod(), true))
             {
-                RILogManager.Default.SendInformation("Information1");
-                RILogManager.Default.SendInformation("Information2");
-                RILogManager.Default.SendInformation("Information3");
+                RILogManager.Default.SendInformation("Button_NoException");
             }
 
             RILogManager.Default.AddSeparator();
@@ -40,9 +35,7 @@ namespace HttpModule_Sample
             {
                 try
                 {
-                    RILogManager.Default.SendInformation("Information1");
-                    RILogManager.Default.SendInformation("Information2");
-                    RILogManager.Default.SendInformation("Information3");
+                    RILogManager.Default.SendInformation("Button_Exception1");
 
                     throw new Exception("Throw exception1");
                 }
@@ -60,15 +53,7 @@ namespace HttpModule_Sample
                 try
                 {
                     RILogManager.Default.EnterMethod(MethodBase.GetCurrentMethod(), true);
-                    RILogManager.Default.EnterMethod(MethodBase.GetCurrentMethod(), true);
-                    RILogManager.Default.EnterMethod(MethodBase.GetCurrentMethod(), true);
-
-                    RILogManager.Default.SendInformation("Information1");
-                    RILogManager.Default.SendInformation("Information2");
-                    RILogManager.Default.SendInformation("Information3");
-
-                    RILogManager.Default.ExitMethod(MethodBase.GetCurrentMethod(), true);
-                    RILogManager.Default.ExitMethod(MethodBase.GetCurrentMethod(), true);
+                    RILogManager.Default.SendInformation("Button_Exception2");
                     RILogManager.Default.ExitMethod(MethodBase.GetCurrentMethod(), true);
 
                     throw new Exception("Throw exception2");
